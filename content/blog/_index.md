@@ -21,7 +21,7 @@ sidebar:
   text_link_label: 
   text_link_url: /index.xml
   title: Meet our lab members
-thumbnail_left: true
+thumbnail_left: false
 title: Lab member bios
 ---
 

@@ -45,6 +45,7 @@ Cardoso HFV, Spake L, Humphrey LT. 2017. Age estimation of immature human skelet
 Cardoso HFV, Spake L, Liversidge HM. 2016. A reappraisal of developing permanent tooth length as an estimate of age in human immature skeletal remains. Journal of Forensic Sciences 61:1180-1189. DOI: [10.1111/1556-4029.13120](https://doi.org/10.1111/1556-4029.13120).
 
 ### Selected conference presentations from this project
-_italics = lab student author_
 
-*Behunin K, Caccavari C*, Cardoso HFV, Spake L. 2023. Can diaphyseal shape variables improve the reliability of juvenile age estimation methods applied across populations? Canadian Association of Biological Anthropologists, Winnipeg.
+Murray NJ, Caccavari C, Holland E, Harrington L, Cardoso HFV, Spake L. 2025. A comparison of the inferences yielded by three different means of quantifying growth in archaeological samples. Canadian Association of Biological Anthropologists, Victoria.
+
+Behunin K, Caccavari C, Cardoso HFV, Spake L. 2023. Can diaphyseal shape variables improve the reliability of juvenile age estimation methods applied across populations? Canadian Association of Biological Anthropologists, Winnipeg.

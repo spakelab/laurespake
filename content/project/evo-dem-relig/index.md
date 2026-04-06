@@ -33,12 +33,16 @@ The project is funded by the John Templeton Foundation and the Templeton Religio
 
 The first round of data collection across all five study settings is complete. 
 
-In summer 2024, our team launched a second wave of data collection in The Gambia. In this wave, we re-visited a subset of our participants and their children, focusing on collection additional and higher-resolution measures of both maternal and child wellbeing. Multiple students working with the lab contributed to this wave of data collection.
+In summers 2024-2026, our team launched waves 2-4 of data collection in The Gambia. In these wave, we re-visit a subset of our participants and their children, focusing on collection additional and higher-resolution measures of both maternal and child wellbeing. Multiple students working with the lab contributed to coordination, field work, and lab work for this project.
 
-Several lab members are actively contributing to data analysis from this project.
+Several lab members are actively contributing to data analysis from this project. Student have used the data for course-based projects.
 
 
 ### Selected publications from this project
+
+Samore T, Sosis R, Shaver J, Chvaja R, Conrad M, Hassan A, Lynch R, Schaffnit S, Sear R, Spake L, Watts J, Shenk M. 2026. Religious parents receive more alloparental cooperation in rural Bangladesh. Evolutionary Human Sciences 8:e5. DOI: [10.1017/ehs.2025.10029](https://doi.org/10.1017/ehs.2025.10029).
+
+Chvaja R, Shaver J, Spake L, Hassan A, Alam N, Rajesh R, Sear R, Sosis R, Shenk M. 2025. The role of parental religion in shaping paternal investment: Evidence from Bangladesh and India. Proceedings of the Royal Society B 292:20251352. DOI: [10.1098/rspb.2025.1352](https://doi.org/10.1098/rspb.2025.1352).
 
 Shaver JH, Chvaja R, Spake L, Prentice AM, Cerami C, Badjie J, Sear R, Shenk MK, Sosis R. 2024. Religious involvement is associated with higher fertility and lower maternal investment, but more alloparental support among Gambian mothers. American Journal of Human Biology. DOI: [10.1002/ajhb.24144](https://doi.org/10.1002/ajhb.24144).
 
@@ -55,6 +59,20 @@ Spake L, Schaffnit SB, Sear R, Shenk M, Sosis R, Shaver JH. 2021. Mothers’ par
 
 ### Selected conference presentations from this project
 
+Gauck M, Efremenkova J, Behunin K, Bajo K, Ceesay A, Bah F, Gaye S, Kandeh B, Njie S, Bahoum F, Drammeh I, Singhateh B, Cerami C, Sosis R, Sear R, Shenk M, Shaver J, Spake L. 2026. Patterning of the diurnal cortisol rhythm in a subsistence agriculturalist population, West Kiang, Gambia. HBA, Denver
+
+Hassan A, Spake L, Swartz R, Malla S, Chvaja R, Schaffnit SB, Watts J, Sosis R, Sear R, Shaver JH, Shenk MK. 2026. Associations between frequency of social support received by women and their health outcomes in the United States. AABA, Denver. 
+
+Behunin K, Gauck M, Efremenkova J, Camara A, Ndene M, Singhateh BKJ, Bajo K, Ceesay A, Bah F, Gaye S, Kandeh B, Njie S, Bahoum F, Drammeh I, Cerami C, Sosis R, Sear R, Shenk M, Wander K, Shaver J, Spake L. 2026. The impact of iron on maternal mental health: A causal analysis using directed acyclic graphs. HBA, Denver
+
+Efremenkova J, Miller C, Gabr Z, Torina D, Henning K, Camara A, Ndene M, Singateh B, Cerami C, Sosis R, Sear R, Shenk MK, Wander K, Shaver J, Spake L. 2026. The trade-offs between immune activation and growth in Gambian children. AABA, Denver. 
+
+Sheppard P, Spake L, Hassan A, Schaffnit SB, Chvaja R, Samore T, Shenk MK, Shaver JH, Sear R. 2025. The relationship between family size and child health: Evidence from five countries. EHBEA, Newcastle, UK.
+
+Behunin K, Hassan A, Schaffnit SB, Sear R, Shenk MK, Sosis R, Shaver JH, Spake L. All work and no play: A cross-cultural analysis of children’s household labor contributions. AABA, Baltimore. 
+
+Sear R, Hassan A, Spake L, Chvaja R, Schaffnit S, Shenk MK, Sosis R, Shaver J. 2025. Raising children with the village: a cross-cultural investigation of allomothering and its associations with child health. IUSSP, Brisbane.
+
 Taiwo I, Caba S, Hassan A, Spake L. 2024. Exploring maternal health information seeking behavior and proposing empowering solutions for improved healthcare outcomes. NYSPHA, Saratoga Springs NY.
 
 Taiwo I, Caba S, Sear R, Shaver JH, Shenk MK, Sosis R, Spake L, Hassan A, and the EvoDemReligion Team. 2024. What is a father’s role? Men’s perspectives on their contributions to raising children in The Gambia and Malawi. EHBEA, Montpellier, France.
@@ -66,7 +84,7 @@ Hassan A, Sear R, Spake L, Schaffnit S, Chvaja R, Shaver J, & The Evolutionary D
 Spake L, Hassan A, Badjie J, Sear R, Shenk MK, Sosis R, Shaver JH. 2022. Provisioning, but not other types of allomothering, may promote healthy growth in children. AAA, Seattle.
 
 
-### Photos from wave 2
+### Photos from wave 2-4
 
 ![Field data collection team and Julie outside the Supplement center in Keneba, The Gambia](rfp2-team.jpg)
 

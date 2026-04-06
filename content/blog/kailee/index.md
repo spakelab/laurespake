@@ -8,7 +8,7 @@ featured: true
 excerpt: Kailee is a graduate student in the lab working on trade-offs in growth and development
 layout: single
 subtitle: MA/PhD Student and Researcher
-title: Kailee Behunin
+title: Kailee Behunin 
 ---
 
 ## About me 
