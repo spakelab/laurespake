@@ -95,7 +95,7 @@ menu:
       url: /contributors/
       weight: 3
   header:
-    - name: About 
+    - name: About Me 
       title: About Laure
       url: /about/
       weight: 1

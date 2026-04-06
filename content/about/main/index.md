@@ -15,7 +15,9 @@ intro: |
   <br><br>
   My research practice adheres to Open Science principles wherever possible. I am passionate about using and teaching R for data processing and statistical analysis. Currently, I co-organize [Rchaeology](https://rchaeology.github.io/about/), an online community uniting R-using archaeologists from around the world. At Binghamton, I am affiliated with the [Data Science TAE](https://www.binghamton.edu/transdisciplinary-areas-of-excellence/data-science/index.html).
   <br><br>
-  In my free time, I am an avid trail runner, climber, and all around outdoors enthusiast. I also love spending time with Oreo, my cuddly black lab.
+  In my free time, I am an avid trail runner, climber, and all around outdoors enthusiast. I also love spending time with Oreo, my cuddly black lab. Here is a picture of her out on a walk on our way to a conference!
+  
+  
 show_outro: false
 outro: |
   <i class="fas fa-glass-cheers pr2"></i>I am admitting students during the 2022-2023 application cycle. Check out the "our lab" section to learn more about us.
