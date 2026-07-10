@@ -2,6 +2,7 @@
 title: "Biological mortality bias in diaphyseal growth of contemporary children: Implications for paleoauxology"
 author: "Laure Spake, Robert D. Hoppa, Soren Blau, Hugo F.V. Cardoso"
 date: '2022-05-01'
+weight: 2 # hidden order; higher = shown first. Give each new paper the next-highest number.
 slug: 
 categories:
   - Bioarchaeology
@@ -27,8 +28,6 @@ format: hugo
 ---
 
 
-### Abstract:
-
 *Objectives*:
 Biological mortality bias is the idea that individuals who comprise skeletal samples (non-survivors) are a specific subset of the overall population, who may have been exposed to greater stress during life. Because of this, it is possible that studying growth in a skeletal population misrepresents the growth and health of survivors in that population. Using a modern sample, this study investigates whether biological mortality bias in growth may be present in archaeological skeletal samples.
 
@@ -40,8 +39,4 @@ Differences in growth favoring survivors were greater for girls than for boys an
 
 *Conclusions*:
 A greater growth delay in girls than in boys has been documented in historical identified collections, and skeletal samples consistently become more stunted relative to modern standards over the course of growth. Our findings on biological mortality bias could explain part of these growth delays and impact interpretations of past ontogenetic environments.
-
-
-
-![Plot showing mortality bias in femur for length in females but not males](featured.png)
 

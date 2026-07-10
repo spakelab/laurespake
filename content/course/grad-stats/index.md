@@ -11,19 +11,19 @@ tags:
 - hugo-site
 ---
 
-## Course Description
+### Course Description
 
 This course is aimed at graduate students in anthropology who will need to analyze the increasingly large and complex datasets collected in our field. The course takes an applied approach to statistics: it prioritizes teaching theory, “how-to” skills, and critical thinking over teaching the math underlying the models. Students will leave this course equipped with the skills needed to perform data management and wrangling, transformations, and statistical modeling. Skills are taught using R, a free and open source statistical computing language. No prior experience with R or with programming is necessary, but willingness to learn these skills is expected.
 
 ---
 
-## Syllabus
+### Syllabus
 
 The syllabus is available [here](https://drive.google.com/file/d/1Q-2mb-234fGiIAwJ8EoAHyqvKfWCnpbB/view?usp=sharing). It does not have associated readings. This is because I use a mixture of open source textbooks, online tutorials, and videos to reinforce the concepts I teach in lecture. I link all of these resources from our institutional LMS. The primary textbooks used are linked in the syllabus.
 
 --- 
 
-## Link to course materials
+### Link to course materials
 
 The course is delivered in *R* over Posit Cloud. The entire course was developed in a GitHub repository, which is available [here](https://github.com/lolosp/bu-anth572s/tree/main). You should note a few things about this repository. 
 

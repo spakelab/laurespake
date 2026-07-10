@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2022-03-15"
 draft: false
+weight: 3 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: Laure and Jainaba visiting with a participant in the women's garden
 layout: single
 tags:

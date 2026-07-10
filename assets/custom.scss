@@ -1,1 +1,71 @@
 // Override this file to add your own SCSS styling.
+
+// About/Lab pages: sub-headers above curated lists (section links, lab members).
+// Match the page headings (e.g. the "About me" title): same heading font
+// ($headingFontFamily -> custom-heading-font, the serif) and same dark color.
+.about-section-links-header,
+.lab-members-header {
+  @extend .#{$headingFontFamily}, .#{$headingColor};
+}
+
+// Section/list pages wrap the title text in a link (e.g. lab member names on
+// the About the Lab page, project/gallery/post titles), so the body-link color
+// overrides the heading color and those headers don't turn blue. Re-apply the
+// heading color to heading-text links inside page content. `:not(.link)` keeps
+// the specificity above `.page-main a:not(.link)` and excludes the nav-style
+// "Series:" links (which carry the .link class).
+.page-main h1 a:not(.link),
+.page-main h2 a:not(.link),
+.page-main h3 a:not(.link),
+.page-main h4 a:not(.link),
+.page-main h5 a:not(.link),
+.page-main h6 a:not(.link) {
+  @extend .#{$headingColor};
+}
+
+// Lab member profile pages (layouts/profiles/single.html):
+// shrink the in-body headings (e.g. "About me") below the theme default,
+// and hide the heading anchor-link symbols.
+.profile-body.post-body {
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+.profile-body .anchor-symbol,
+.project-body .anchor-symbol {
+  display: none;
+}
+// "See another profile:" label above the back button: match the page headings
+// (same heading font + dark color as the in-body h2/h3), bold and slightly larger.
+.profile-nav-label {
+  @extend .#{$headingFontFamily}, .#{$headingColor};
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+// Publications: collapsible abstracts — first 2 sentences, click the down-caret to expand.
+.pub-summary {
+  cursor: pointer;
+  list-style: none; // hide the default disclosure triangle
+}
+.pub-summary::-webkit-details-marker { display: none; }
+.pub-more {
+  @extend .#{$headingColor}; // match the header color (tracks it if changed)
+  font-weight: 700;
+  font-size: 1.25rem; // a touch larger so it's easy to spot
+  line-height: 1;
+}
+// When expanded, hide the teaser and show the full formatted abstract instead.
+details[open] .pub-summary { display: none; }
+// Collapse control shown only when expanded (it lives inside <details>).
+.pub-collapse {
+  display: inline-flex;
+  align-items: center;
+  margin-top: .5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  @extend .#{$headingColor}; // match the header color (tracks it if changed)
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}

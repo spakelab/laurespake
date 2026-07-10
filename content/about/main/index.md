@@ -1,10 +1,18 @@
 ---
 ## Configure page content in wide column
 title: "About me" # leave blank to exclude
-number_featured: 0 # pulling from mainSections in config.toml
-use_featured: false # if false, use most recent by date
-number_categories: 0 # set to zero to exclude
 show_intro: true
+# Curated list of section links shown below the intro (replaces the old
+# featured-content previews). Edit the header text and the links freely.
+show_section_links: true
+section_links_header: "Learn more about us and our work:"
+section_links:
+  - name: "Our Lab"
+    url: /lab/
+  - name: "Projects"
+    url: /project/
+  - name: "Publications"
+    url: /pub/
 intro: |
   
   Welcome! I am a biological anthropologist studying children. I am primarily interested in understanding how variation in child outcomes arises, particularly in terms of physical growth and development. Beyond this, my research program also covers broader topics across forensic anthropology, evolutionary anthropology, and ethical practices in anthropology. My work integrates studies of past and contemporary populations to better understand the full range of human variation. I have worked with diverse types of data including: dry bones, CT scans, historical records, surveys, focus group discussions, and more. Currently, I am  expanding my portfolio to include immune and endocrine biomarkers.

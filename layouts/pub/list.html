@@ -1,0 +1,58 @@
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="blog-intro mw7 center mb5">
+    <h2 class="f2 f1-ns lh-solid tc center fw4">{{ .Title | markdownify }}</h2>
+    {{ with .Description }}<p class="f6 f5-ns measure lh-copy tc center">{{ . | markdownify }}</p>{{ end }}
+  </section>
+  <section class="blog-content mw7 center">
+    {{/* Order by hidden weight, highest first, so the newest (largest-numbered) paper leads.
+         Each item is self-contained — no link to a detail page. */}}
+    {{ $pages := sort (where .RegularPagesRecursive "Type" .Section) "Weight" "desc" }}
+    {{ range $pages }}
+      {{ $pg := . }}
+      <article class="mv4 mv5-l pb4 bb">
+        <h2 class="f3 mt0 mb2 lh-title fw6">{{ .Title | markdownify }}</h2>
+        {{ with .Params.author }}<p class="f6 lh-copy mv1 i">{{ . | markdownify }}</p>{{ end }}
+        {{ if or .Params.publication .Date }}
+          <p class="f6 lh-copy mv1">
+            {{- with .Params.publication }}<span class="fw6">{{ . | markdownify }}</span>{{ end -}}
+            {{- with .Date }}{{ if $pg.Params.publication }} &middot; {{ end }}{{ .Format "2006" }}{{ end -}}
+          </p>
+        {{ end }}
+        {{ with .Params.links }}
+          <p class="db mt2 mb3">{{ partial "shared/btn-links.html" $pg }}</p>
+        {{ end }}
+        {{/* Abstract: show the first 2 sentences, then a down-caret to expand the rest
+             (matches the up-caret collapse control).
+             No JS — native <details>. Split only on .!? followed by whitespace so
+             decimals (e.g. "0.98") and the like are not treated as sentence ends. */}}
+        {{ $plain := trim .Plain " \n\r\t" }}
+        {{ if $plain }}
+          {{ $sentences := split (replaceRE `([.!?])\s+` "${1}|||" $plain) "|||" }}
+          {{ if gt (len $sentences) 2 }}
+            {{/* Collapsed: a 2-sentence teaser (plain). Expanded: the full original
+                 abstract with its formatting/paragraphs intact, flowing naturally. */}}
+            {{ $preview := replaceRE `[.!?]+$` "" (delimit (first 2 $sentences) " ") }}
+            <details class="pub-abstract f6 lh-copy mv2">
+              <summary class="pub-summary">{{ $preview }} <span class="pub-more" aria-label="Show more"><i class="fas fa-angle-down"></i></span></summary>
+              <div class="pub-full">
+                {{ .Content }}
+                <button type="button" class="pub-collapse" aria-label="Show less"><i class="fas fa-angle-up"></i></button>
+              </div>
+            </details>
+          {{ else }}
+            <div class="pub-abstract f6 lh-copy mv2">{{ .Content }}</div>
+          {{ end }}
+        {{ end }}
+      </article>
+    {{ end }}
+  </section>
+</main>
+{{/* Clicking a collapse button closes its parent <details>. */}}
+<script>
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('.pub-collapse');
+  if (btn) { var d = btn.closest('details'); if (d) { d.open = false; } }
+});
+</script>
+{{ end }}

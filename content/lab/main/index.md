@@ -1,10 +1,11 @@
 ---
 ## Configure page content in wide column
 title: "About the lab" # leave blank to exclude
-number_featured: 4 # pulling from mainSections in config.toml
-use_featured: false # if false, use most recent by date
-number_categories: 0 # set to zero to exclude
 show_intro: true
+# Lab member list shown below the intro. Profiles are pulled from this section
+# (each page bundle under content/profiles/ = one member); edit the header freely.
+members_section: profiles
+members_header: "Meet our lab members"
 intro: |
   Our lab members work at the intersections of skeletal and human biology, integrating studies of past and contemporary peoples. Ongoing work spans the subdisciplines - current projects address topics within forensic anthropology, bioarchaeology, and human biology. See the *Projects* tab for a sample of what we do. 
   <br><br>
@@ -13,11 +14,11 @@ intro: |
   Lab ethos: We value collaborative, interdisciplinary, methodologically sound work that is grounded in open science principles. Lab members are expected to read broadly and across sub-disciplines, dedicate time to improving their statistical skills, to work in *R* and to support each other's work where appropriate. We meet as a group weekly for journal clubs, code reviews, and/or to share progress updates.
   <br><br>
   Prospective students: If you are considering applying to join the lab as an MSc or PhD student, please get in touch with me via e-mail prior to applying. This will help you determine whether your research interests align with our work.
-show_outro: true
+show_outro: false
 outro: |
   
   
 ---
 
 ** index doesn't contain a body, just front matter above.
-See about/list.html in the layouts folder **
+See lab/list.html in the layouts folder **

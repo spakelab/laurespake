@@ -5,8 +5,8 @@ categories:
 - forensic anthropology
 - biological profile
 - method development
-date: "2016-09-01"
 draft: false
+weight: 1 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: The purpose of this project is to develop and test methods for estimating various parameters of the juvenile biological profile for use in both bioarchaeological and forensic contexts
 layout: single
 links:

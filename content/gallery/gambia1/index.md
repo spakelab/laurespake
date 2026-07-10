@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2022-03-04"
 draft: false
+weight: 2 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: Alieu takes anthropometrics as children watch on, the Gambia
 layout: single
 tags:

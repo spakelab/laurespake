@@ -1,0 +1,43 @@
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">{{ .Title }}</h1>
+        {{ if .Params.subtitle }}<h4 class="f3 mt0 mb4 lh-title measure">{{ .Params.subtitle }}</h4>{{ end }}
+        {{/* No author byline, categories, or date for lab member profiles. */}}
+
+      {{ if .Params.links }}
+      <div class="ph0 pt5">
+        {{ partial "shared/btn-links.html" . }}
+      </div>
+      {{ end }}
+
+      </header>
+      <section class="post-body profile-body pt4 pb4">
+        {{ .Content }}
+        {{/* Expandable post-details tab intentionally omitted. */}}
+      </section>
+      <footer class="post-footer">
+        {{/* Quick links to the other lab member profiles in this section, ordered by weight. */}}
+        {{ $others := where .CurrentSection.Pages.ByWeight "Permalink" "!=" .Permalink }}
+        {{ with $others }}
+        <nav class="profile-nav bt b--black-10 pt3 mt4 mb2 lh-copy">
+          <span class="profile-nav-label db mb2">See another profile:</span>
+          {{ range $i, $p := . }}{{ if $i }}, {{ else }} {{ end }}<a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ end }}
+        </nav>
+        {{ end }}
+        {{/* Always link back to the lab page instead of paginating between profiles. */}}
+        <div class="post-pagination dt w-100 mt4 mb2">
+          {{ with site.GetPage "/lab" }}
+          <a class="prev dtc pr2 tl v-top fw6" href="{{ .RelPermalink }}">&larr; Back to About the Lab</a>
+          {{ end }}
+        </div>
+      </footer>
+    </article>
+    {{ if .Params.show_comments }}
+      {{ partial "shared/comments.html" . }}
+    {{ end }}
+  </section>
+</main>
+{{ end }}

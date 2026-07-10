@@ -4,8 +4,8 @@ categories:
 - bioarchaeology
 - growth
 - mortality bias
-date: "2019-07-01"
 draft: false
+weight: 2 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: The purpose of this project is to reflect on the likely magnitude of mortality bias in growth in the past. Are archaeological skeletal samples of juveniles representative of their living peers?
 layout: single
 links:

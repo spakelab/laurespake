@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2021-11-01"
 draft: false
+weight: 1 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: Tumbulu interviewing a participant, the Gambia
 layout: single
 tags:

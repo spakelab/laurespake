@@ -5,8 +5,8 @@ categories:
 - demography
 - religion
 - cooperative breeding
-date: "2024-09-30"
 draft: false
+weight: 3 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: Does social support improve maternal and child outcomes? And what role does belonging to a religious group play in promoting social networks and cooperation?
 layout: single
 links:

@@ -4,8 +4,8 @@ categories:
 - evolutionary anthropology
 - cooperation
 - religion
-date: "2025-10-01"
 draft: false
+weight: 6 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: Can we use proximity sensors and daily recalls of social interaction to derive better data collection protocols for observing cooperation and religiosity in the field? How might a longitudinal study leverage these tools to drive a causal analysis of the impact of religion on cooperation?
 layout: single
 links:

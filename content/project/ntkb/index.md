@@ -5,8 +5,8 @@ categories:
 - women's cooperation
 - religion
 - health of girls and women
-date: "2024-10-01"
 draft: false
+weight: 4 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: What factors do parents consider when they weight the choice to have their girls cut? How is information about women's cut status shared across communities? How does this inform our understanding of the cultural mechanisms underpinning the continuance of the practice?
 layout: single
 links:

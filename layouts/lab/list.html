@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $page := . }}
+<main class="page-main pa4" role="main">
+  <!-- mw7 + ph4-l matches the text column width of the project/gallery/profile
+       single pages (layouts/{project,profiles}/single.html) -->
+  <section class="page-content mw7 center ph4-l">
+
+    <!--begin header-->
+    {{ if .Params.show_header }}
+    {{ $header := printf "/%s/%s" .Section "header/index.md" }}
+    {{ with site.GetPage $header }}
+      <header class="page-header bb b--black-10 bw1 pb4 mb5 {{ if .Params.text_align_right }}tr{{ end }}">
+      {{ if .Params.show_title_as_headline }}<h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns db">{{ $page.Title | markdownify }}</h1>
+      {{ else }}<h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns db">{{ .Params.headline | markdownify }}</h1>{{ end }}
+      {{ with .Content}}
+        <div class="pt2 f4 measure-wide lh-copy dib">{{ . | markdownify }}</div>
+      {{ end }}
+      </header>
+    {{ end }}
+    {{ end }}
+
+    <!--single full-width content column (no sidebar)-->
+    <section class="page-body {{ if not .Params.show_header }}mt4{{ end }}">
+      {{ $main := printf "/%s/%s" .Section "main/index.md" }}
+      {{ with site.GetPage $main }}
+        {{ $mainpg := . }}
+
+        {{ if $page.Params.show_header }}
+          {{ with .Title }}<h2 class="about-main f2 fw7 tl">{{ . | markdownify }}</h2>{{ end }}
+        {{ else }}
+          {{ with .Title }}<h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ . | markdownify }}</h1>{{ end }}
+        {{ end }}
+
+        {{ if .Params.show_intro }}
+          <div class="pv3 f4 lh-copy">{{ .Params.intro | markdownify }}</div>
+        {{ end }}
+
+        <!--lab member list: pulls profiles from the bios section (default: profiles)-->
+        {{ $members_section := .Params.members_section | default "profiles" }}
+        {{ with site.GetPage "section" $members_section }}
+          <section class="lab-members pt3">
+            {{ with $mainpg.Params.members_header }}
+              <p class="lab-members-header f3 fw6 mb3">{{ . | markdownify }}</p>
+            {{ end }}
+            {{ range .Pages.ByWeight }}
+              {{ $m := . }}
+              <article class="flex flex-column flex-row-ns items-start mb4">
+                {{ $thumb := ($m.Resources.ByType "image").GetMatch "*feature*" }}
+                {{ with $thumb }}
+                  <figure class="ma0 mb3 mb0-ns mr0 mr4-ns w-100 w-30-ns">
+                    <a href="{{ $m.RelPermalink }}" class="db">
+                      <img src="{{ .RelPermalink }}" alt="{{ $m.Title }}" class="db w-100">
+                    </a>
+                  </figure>
+                {{ end }}
+                <div class="w-100">
+                  <h4 class="f4 mt0 mb1 lh-title"><a href="{{ $m.RelPermalink }}" class="dim no-underline">{{ $m.Title }}</a></h4>
+                  {{ with $m.Params.subtitle }}<p class="f6 ttu tracked fw2 mt0 mb2">{{ . }}</p>{{ end }}
+                  {{ $summary := cond (ne $m.Params.excerpt nil) $m.Params.excerpt $m.Summary }}
+                  {{ with $summary }}<p class="lh-copy mt0 mb2">{{ . | markdownify | emojify }}</p>{{ end }}
+                  <a href="{{ $m.RelPermalink }}">Learn more &rarr;</a>
+                </div>
+              </article>
+            {{ end }}
+          </section>
+        {{ end }}
+
+        {{ if .Params.show_outro }}
+          <div class="pt3 lh-copy cf">{{ .Params.outro | markdownify }}</div>
+        {{ end }}
+
+      {{ end }}
+    </section>  <!--close body section-->
+
+  </section>    <!--close page content section-->
+</main>
+{{ end }}

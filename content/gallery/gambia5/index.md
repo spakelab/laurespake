@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2024-07-20"
 draft: false
+weight: 5 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: Kailee and two nurses assess a child's fine motor development
 layout: single
 tags:

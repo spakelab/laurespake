@@ -11,25 +11,25 @@ tags:
 - hugo-site
 ---
 
-## Course Description
+### Course Description
 
 What is a child, and what do humans gain from our unique and extended childhood? This course takes a biocultural perspective on childhood, exploring how the biology and psychology of children interact with cultural practices to create human childhoods. We will explore how anthropologists study childhood across the subdisciplines, variously adopting biological, sociocultural, archaeological, and historical lenses. Through our study of children and their development, we will explore the extent to which both “nature” and “nurture” shape what it means to be a child. We will also reflect on normative North American childhoods as just one of many possible human childhoods.
 
 --- 
 
-## Syllabus 
+### Syllabus 
 
 The syllabus is available [here](https://drive.google.com/file/d/141g0TR4-SvpVY6F2NBSRX3rUW7A5NZdR/view?usp=sharing). It does not yet have readings listed in the schedule, but this should be coming soon! 
 
 ---
 
-## Assignments
+### Assignments
 
 The bulk of the work for the course consisted of short (300-500 word) written assignments that students completed throughout the semester. The prompts asked students to do things like: deeply read three articles to analyse how much topical and/or citational overlap there was between them; watch short ethnographic films and reflect on cross-cultural variation in parenting; design a school for 6-10 year olds that they think would be best to prepare North American children; perform a material culture survey of two neighbourhoods to interpret the role of children in each setting; reflect on social and legal adulthood in the USA. 
 
 --- 
 
-## Un-Essay Project Examples
+### Un-Essay Project Examples
 
 The culminating project for this course is an Un-Essay. Students conduct research and instead of writing a paper, they produce a creative work based on their research. Here are some of the projects students have produced for this course. All are shared with permission of the student. The project and its guidelines were inspired by and adapted from Cara Ocobock and Marc Kissel, and are [here](https://drive.google.com/file/d/1HyCBOt23p3QfGfCLk-Dmw72Knkylr5Jk/view?usp=sharing). 
 

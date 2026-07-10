@@ -1,6 +1,15 @@
 ---
+build:
+  render: always
+  list: local
 cascade:
-  headless: true
+  # Hugo removed `headless: true`; use build options instead so the
+  # header/main/sidebar fragments aren't rendered as standalone pages but their
+  # images/audio still publish. The section landing (this page) still renders.
+  build:
+    render: never
+    list: never
+    publishResources: true
 description: |
   A website template for Hugo developed by RStudio & Formspree and available for free.
 show_header: false

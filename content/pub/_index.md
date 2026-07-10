@@ -12,7 +12,7 @@ cascade:
     text_link_url: /pub/
     
 description: |
-  Under construction!
+  \*  Graduate student trainee;  \*\*  Undergraduate student trainee
 layout: list
 show_author_byline: false
 show_post_date: false

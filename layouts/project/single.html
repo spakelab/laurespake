@@ -1,0 +1,36 @@
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">{{ .Title }}</h1>
+        {{ if .Params.subtitle }}<h4 class="f4 mt0 mb4 lh-title measure">{{ .Params.subtitle }}</h4>{{ end }}
+        {{/* No author byline, categories, or date for project pages. */}}
+
+      {{ if .Params.links }}
+      <div class="ph0 pt5">
+        {{ partial "shared/btn-links.html" . }}
+      </div>
+      {{ end }}
+
+      </header>
+      <section class="post-body project-body pt5 pb4">
+        {{ .Content }}
+        {{/* Expandable post-details tab intentionally omitted. */}}
+      </section>
+      <footer class="post-footer">
+        {{/* Link back to the item's own section landing. This template is shared by the
+             project and gallery sections (both Type "project"), so derive the label. */}}
+        <div class="post-pagination dt w-100 mt4 mb2">
+          {{ with .CurrentSection }}
+          <a class="prev dtc pr2 tl v-top fw6" href="{{ .RelPermalink }}">&larr; Back to {{ if eq $.Section "gallery" }}Gallery{{ else if eq $.Section "course" }}Courses Taught{{ else }}Projects{{ end }}</a>
+          {{ end }}
+        </div>
+      </footer>
+    </article>
+    {{ if .Params.show_comments }}
+      {{ partial "shared/comments.html" . }}
+    {{ end }}
+  </section>
+</main>
+{{ end }}

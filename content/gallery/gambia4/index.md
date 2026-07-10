@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2023-10-10"
 draft: false
+weight: 4 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: RFP team shares early results of wave 1 in Keneba
 layout: single
 tags:

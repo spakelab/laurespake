@@ -2,8 +2,8 @@
 author: Laure Spake
 categories:
 - The Gambia
-date: "2025-01-15"
 draft: false
+weight: 6 # hidden order; higher = shown first. Give each new photo the next-highest number.
 excerpt: The NTKB team assembles before a day out in the field
 layout: single
 tags:

@@ -1,6 +1,6 @@
 baseURL: https://laurespake.netlify.app/
 theme: hugo-apero
-languageCode: en
+locale: en
 title: 
 author: Laure Spake
 copyright: ''
@@ -8,26 +8,26 @@ googleAnalytics: ''
 disqusShortname: ''
 metaDataFormat: yaml
 footnoteReturnLinkContents: '&#8617;'
-paginate: 5
-preserveTaxonomyNames: yes
+pagination:
+  pagerSize: 5
 ignoreFiles:
   - \.Rmd$
   - \.Rmarkdown$
   - _cache$
   - \.knit\.md$
   - \.utf8\.md$
-enableEmoji: yes
+enableEmoji: true
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
-      hardwraps: no
-      unsafe: yes
+      hardwraps: false
+      unsafe: true
   highlight:
     style: github
   tableOfContents:
     endLevel: 2
-    ordered: no
+    ordered: false
     startLevel: 2
 params:
   custom_theme: ''
@@ -38,14 +38,14 @@ params:
   headingFontFamily: sans-serif
   logo: /img/homeicon.png
   mainSections:
-    - blog
+    - profiles
     - gallery
     - project
     - talk
     - pub
   math:
     renderer: katex
-  navallcaps: yes
+  navallcaps: true
   orgLocal: Anywhere
   orgName: RStudio
   sharing_image: /img/street-crop.jpg
@@ -53,20 +53,20 @@ params:
     - icon: github
       icon_pack: fab
       url: https://github.com/lolosp
-    - icon: twitter
+    - icon: bluesky
       icon_pack: fab
-      url: https://twitter.com/LSpakeAnthro
+      url: https://bsky.app/profile/lspake.bsky.social
     - icon: orcid
       icon_pack: ai
       url: https://orcid.org/0000-0002-2243-7356
     - icon: researchgate
       icon_pack: fab
-      url: https:/researchgate.net/profile/Laure-Spake
+      url: https://www.researchgate.net/profile/Laure-Spake
     - icon: osf
       icon_pack: fab
       url: https://osf.io/z7hcm/
-  socialInFooter: yes
-  socialInHeader: no
+  socialInFooter: true
+  socialInHeader: false
   textFontFamily: sans-serif
   theme: grayscale
   twitter: LSpake_Anthro
@@ -75,7 +75,7 @@ params:
     label: 'comments :crystal_ball:'
     repo_name: lolosp/laurespake
     theme: boxy-light
-    use_utterances: yes
+    use_utterances: true
 taxonomies:
   category: categories
   series: series
@@ -86,10 +86,6 @@ menu:
       title: License
       url: /license/
       weight: 1
-    - name: Contact
-      title: Contact form
-      url: /contact/
-      weight: 2
     - name: Contributors
       title: Contributors
       url: /contributors/
@@ -119,22 +115,22 @@ menu:
       url: /gallery/
 privacy:
   disqus:
-    disable: no
+    disable: false
   googleAnalytics:
-    anonymizeIP: yes
-    disable: no
-    respectDoNotTrack: yes
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: true
   instagram:
-    disable: no
-    simple: yes
-  twitter:
-    disable: no
-    enableDNT: yes
-    simple: no
+    disable: false
+    simple: true
+  x:
+    disable: false
+    enableDNT: true
+    simple: false
   vimeo:
-    disable: no
-    enableDNT: yes
-    simple: yes
+    disable: false
+    enableDNT: true
+    simple: true
   youtube:
-    disable: no
-    privacyEnhanced: yes
+    disable: false
+    privacyEnhanced: true

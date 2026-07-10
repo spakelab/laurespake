@@ -4,8 +4,8 @@ categories:
 - forensic anthropology
 - biological profile
 - method development
-date: "2025-09-01"
 draft: false
+weight: 5 # hidden order; higher = shown first. Give each new project the next-highest number.
 excerpt: What value does secondary dentine deposition rate have for adult age estimation? How well do these methods work across populations?
 layout: single
 
